@@ -17,16 +17,16 @@ Download the latest compiled jar file from [/jar](https://github.com/ldom22/GGGU
 
 ### Usage:
 
-'''
+```
 java -jar GenerateCollapsibleGuide.jar input.txt output.html (jar file)
 java GenerateCollapsibleGuide input.txt output.html (class file)
-'''
+```
 
 To run the demo (Windows):
 
-'''
+```
 java -jar jar\GenerateCollapsibleGuide.jar demo\demo.txt demo\demo.html
-'''
+```
 
 To compile the project just run make.bat (Windows)
 
