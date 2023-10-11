@@ -1,0 +1,100 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+
+	<div data-role="page" id="pageone">
+	<p><center><h1>How to search for memes</h1></center></p>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Capybara memes</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Single capybara</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>In google</h1>
+<p>1. Go to <a target='_blank' href='http://www.google.com'>www.google.com</a></p>
+<p>2. Type 'capybara memes' or copy and paste it</p>
+<p><button id='b1' onclick='clicked("b1")'>Copy &lsquo;capybara memes&lsquo;</button></p>
+<p>3. Press enter</p>
+</div></div>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Generate it using AI</h1>
+<p>1. Go to <a target='_blank' href='http://www.bing.com/chat'>Bing AI</a></p>
+<p>2. Ask ChatGPT / DALL-E to generate it</p>
+</div></div>
+</div></div>
+</div></div>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Spongebob memes</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Patrick memes</h1>
+<p>Try <a target='_blank' href='http://www.reddit.com'>www.reddit.com</a></p>
+</div></div>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Squidward memes</h1>
+<p>TO DO</p>
+</div></div>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Spongebob memes</h1>
+<p>TO DO</p>
+</div></div>
+</div></div>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Dank memes</h1>
+<p>It is</p>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Very</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Hard</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>To</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Find</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Dank</h1>
+<div data-role='main' class='ui-content'>
+<div data-role='collapsible'>
+<h1>Memes</h1>
+<p>:)</p>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+
+	</div>
+
+	</body>
+
+	<script>
+	function clicked(name){
+		var backup = document.getElementById(name).innerHTML
+		document.getElementById(name).innerHTML = 'Copied to clipboard'
+		navigator.clipboard.writeText(backup.substring(6,backup.length-1))
+		setTimeout(() => {
+			document.getElementById(name).innerHTML = backup
+		}, 1000);
+	}
+	</script>
+
+	</html>
