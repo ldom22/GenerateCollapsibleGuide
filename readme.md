@@ -13,12 +13,15 @@ For using GenerateCollapsibleGuide you will need java version "16.0.2" or newer 
 
 Run "java -version" on your local prompt to check if you have java installed, and check which version you have.
 
-Download the latest compiled jar file from [/jar](https://github.com/ldom22/GGGUI/tree/main/jar) or get a release from the [release section](https://github.com/ldom22/GGGUI/releases).
+Download the latest compiled jar file from /jar or get a release from the release section.
 
-### Usage:
-
+Run from jar file
 ```
 java -jar GenerateCollapsibleGuide.jar input.txt output.html (jar file)
+```
+
+Run from class file
+```
 java GenerateCollapsibleGuide input.txt output.html (class file)
 ```
 
@@ -29,6 +32,9 @@ java -jar jar\GenerateCollapsibleGuide.jar demo\demo.txt demo\demo.html
 ```
 
 To compile the project just run make.bat (Windows)
+
+See the demo input file [here](https://ldom22.github.io/GenerateCollapsibleGuide/demo/demo.txt)
+See the demo output file [here](https://ldom22.github.io/GenerateCollapsibleGuide/demo/demo.html)
 
 ### Attributions
 
