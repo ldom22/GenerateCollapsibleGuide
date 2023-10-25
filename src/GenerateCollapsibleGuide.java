@@ -45,19 +45,20 @@ public class GenerateCollapsibleGuide {
 					join = join.substring(0,join.length()-1);
 					Element temp = new Element(join);
 					stack.add(temp);
+					stack.pop();
 					if(cntabs==lastabs){
-						stack.pop();
 						stack.pop();
 						stack.peek().children.add(temp);
 						stack.add(temp);
 					} else if(cntabs==(lastabs+1)){
-						stack.pop();
 						stack.peek().children.add(temp);
 						stack.add(temp);
-					} else if(cntabs==(lastabs-1)){
+					} else if(cntabs<lastabs){
 						stack.pop();
-						stack.pop();
-						stack.pop();
+						while(cntabs<lastabs){
+							lastabs--;
+							stack.pop();
+						}
 						stack.peek().children.add(temp);
 						stack.add(temp);
 					} else {
