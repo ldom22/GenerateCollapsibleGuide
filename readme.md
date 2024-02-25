@@ -17,12 +17,12 @@ Download the latest compiled jar file from /jar or get a release from the releas
 
 Run from jar file:
 ```
-java -jar GenerateCollapsibleGuide.jar input.txt output.html (jar file)
+java -jar GenerateCollapsibleGuide.jar input.txt output.html
 ```
 
 Run from class file:
 ```
-java GenerateCollapsibleGuide input.txt output.html (class file)
+java GenerateCollapsibleGuide input.txt output.html
 ```
 
 To run the demo (Windows):
